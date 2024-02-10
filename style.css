@@ -1,0 +1,32 @@
+.container { 
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 85%;
+    height: 100vh;
+}
+
+.header { 
+    grid-column-start: 2;
+    background-color: bisque;
+}
+
+.side-bar { 
+    background-color: cadetblue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 10% 40% 50%;
+}
+
+.dashboard-header { 
+    grid-row-start: 1 /2;
+}
+
+.navigation-icons { 
+    grid-row-start: 2 / 3;
+}
+
+.systems-support-icons { 
+    grid-row-start: 3 / 4;
+}
