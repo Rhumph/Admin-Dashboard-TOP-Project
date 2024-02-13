@@ -12,8 +12,8 @@
 
     <div class="container">
         <header class="header">
-            <div class="header-content">
 
+            <div class="header-first-row">
                 <div class="search-elements">
                     <div class="search-icon"></div>
                     <input type="text" class="search-bar">
@@ -21,16 +21,20 @@
 
                 <div class="tool-bar">
                     <ul class="tools">
-                        <li class="notification-bell"></li>
-                        <li class="profile-icon"></li>
-                        <li class="user-name"></li>
+                        <li class="notification-bell">Bell</li>
+                        <li class="profile-icon">profile pic</li>
+                        <li class="user-name">user_name</li>
                     </ul>
                 </div>
+            </div>
 
+            <div class="header-second-row">
                 <div class="profile-card">
-                    <img src="" alt="a profile image">
-                    <P class="greeting"></P>
-                    <h1 class="user-details"></h1>
+                    <img src="" alt="a profile image" class="profile-img">
+                    <div class="profile-card-text">
+                        <P class="greeting">Hi there</P>
+                        <h1 class="user-details">User-name</h1>
+                    </div>
                 </div>
 
                 <div class="cta-buttons">
@@ -39,32 +43,41 @@
                     <button>share</button>
                 </div>
             </div>
+
         </header>
 
         <div class="side-bar">
-            <div class="side-bar-content">
 
-                <div class="dashboard-header">Dashboard</div>
+            <div class="dashboard-header">Dashboard</div>
 
-                <div class="navigation-icons">Navigation</div>
+            <div class="navigation-icons">Navigation</div>
 
-                <div class="systems-support-icons">system support icon</div>
-            </div>
+            <div class="systems-support-icons">system support icon</div>
         </div>
-        <div class="Dashboard">
+        <div class="dashboard">
             <div class="main-body">
-                <p class="dashboard-heading">Your Projects</p>
+                <div class="main-body-title">
+                    <p class="dashboard-heading">Your Projects</p>
+                </div>
 
-                <div class="article-card"></div>
-                <div class="article-card"></div>
-                <div class="article-card"></div>
-                <div class="article-card"></div>
-                <div class="article-card"></div>
-                <div class="article-card"></div>
+                <div class="main-body-article-cards">
+                    <div class="article-card"></div>
+                    <div class="article-card"></div>
+                    <div class="article-card"></div>
+                    <div class="article-card"></div>
+                    <div class="article-card"></div>
+                    <div class="article-card"></div>
+                </div>
             </div>
-            <div>
-                <div class="announements-container"></div>
-                <div class="trending-card"></div>
+            <div class="news-stack">
+                <div class="announements-container">
+                    <h1 class="announcments-title">Announcement</h1>
+                    <div class="announcement-card"></div>
+                </div>
+                <div class="trending-container">
+                    <h1 class="trending-title">Trending</h1>
+                    <div class="trending-card"></div>
+                </div>
             </div>
         </div>
     </div>
