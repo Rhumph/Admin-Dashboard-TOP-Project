@@ -1,13 +1,15 @@
 .container { 
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: minmax(300px, 20%) 70%;
     grid-template-rows: minmax(15%, auto) minmax(85%, auto);
     height: 100vh;
+    width: 100%;
 }
 
 .header { 
     grid-column-start: 2;
-    background-color: rgb(238, 238, 238);
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-rows: minmax(40%,auto) minmax(60%,auto);
     padding: 15px;
@@ -62,7 +64,7 @@
 
 .header-second-row{ 
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
 }
 
 .profile-card { 
@@ -83,7 +85,7 @@
     flex-direction: column;
     justify-content:space-around;
     margin-right: auto;
-
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .greeting{ 
@@ -91,9 +93,27 @@
     margin-top: 0px;
 }
 
-.cta-buttons { 
+.user-details { 
+    margin: 0px;
+
+}
+.cta-buttons-container { 
     justify-content: center;
     align-items: center;
+    display: grid;
+}
+
+.cta-button{ 
+    background-color: rgb(33, 166, 228);
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    font-weight: bold;
+    outline-style: none;
+    outline-color: transparent;
+    font-size: 15px;
+    margin: 15px;
 }
 
 .side-bar { 
@@ -104,11 +124,13 @@
     grid-template-columns: 90%;
     grid-template-rows: 5% 30% 20%;
     padding: 20px;
+    max-width: 300px;
 }
 
 .dashboard { 
     display: grid;
     grid-template-columns: 70% 30%;
+    background-color: rgb(238, 238, 238);
 }
 
 .dashboard-header { 
@@ -122,6 +144,7 @@
 .news-stack { 
     display: grid;
     grid-template-rows: 50% 50%;
+    padding: 20px;
 }
 
 .announements-container { 
@@ -136,9 +159,40 @@
 
 .announcement-card { 
     grid-row-start: 2/3;
-    background-color: coral;
-    width: 100px;
-    height: 100px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.announements-content{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line-seperator {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+.announcement-package { 
+    margin: 10px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.announcement-title { 
+    margin: 0px;
+}
+
+.announcment-message { 
+    margin: 0px;
 }
 
 .trending-container { 
@@ -147,13 +201,17 @@
     grid-template-rows: 15% 85%;
 }
 
-.trending-title { 
+.dashboard-heading { 
     grid-row-start: 1/2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 0px;
 }
 
 .trending-card { 
     grid-row-start: 2/3;
-    background-color: coral;
+    background-color: white;
     width: 100px;
     height: 100px;
 }
@@ -202,8 +260,9 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 2% 90%;
     height: 100%;
+    padding: 20px;
 }
 
 .main-body-article-cards { 
@@ -211,14 +270,43 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3,30%);
     grid-row-start: 2/3;
+    gap: 50px;
 }
 
 .article-card { 
-    width: 100px;
-    height: 100px;
-    background-color: burlywood;
+    width: 1fr;
+    height: 250px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2.5% 90%;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
 }
 
-.main-body-title { 
-    grid-column-start: 1/2;
+.yellow-side-line { 
+background-color: rgb(255, 187, 0);
 }
+
+.card-body{ 
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 15% 60% 20%;
+}
+
+.card-body h1 { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.card-body p { 
+    margin: 0px;
+}
+
+.card-icons { 
+    margin-left: auto;
+}
+
