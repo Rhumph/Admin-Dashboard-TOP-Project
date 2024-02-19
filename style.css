@@ -28,10 +28,9 @@
 }
 
 .search-icon { 
-    background-color: aquamarine;
     width: 40px;
     height: 40px;
-    grid-column-start: 1/2;
+    grid-column-start: 1;
 }
 
 .search-bar { 
@@ -60,6 +59,16 @@
     justify-content: space-evenly;
     padding: 0px;
     
+}
+
+.toolbar-list-item { 
+    height: 40px;
+    width: 40px;
+}
+
+.toolbar-list-icon { 
+    /* height: 40px;
+    width: 40px; */
 }
 
 .header-second-row{ 
@@ -139,6 +148,12 @@
     font-weight: bold;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dashboard-header img { 
+    height: 50px;
+    width: 50px;
+    
 }
 
 .news-stack { 
@@ -333,5 +348,13 @@ background-color: rgb(255, 187, 0);
 
 .card-icons { 
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-icons img { 
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
 }
 
