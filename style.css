@@ -148,12 +148,15 @@
     font-weight: bold;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .dashboard-header img { 
     height: 50px;
     width: 50px;
-    
+    margin-right: 10px;
 }
 
 .news-stack { 
@@ -262,11 +265,12 @@
 
 .navigation-list { 
     list-style: none;
+    padding-left: 10px;
 }
 
 .navigation-list-item { 
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -275,17 +279,24 @@
     margin-left: 0px;
 }
 
+.navigation-list-item-icon { 
+    fill: white;
+    height: 30px;
+    margin-right: 20px;
+}
+
 .systems-support-list-container { 
     grid-row-start: 3 / 4;
 }
 
 .systems-support-list{ 
     list-style: none;
+    padding-left: 10px;
 }
 
 .systems-support-list-item{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 25px;
